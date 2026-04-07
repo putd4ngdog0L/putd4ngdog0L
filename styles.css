@@ -1,0 +1,27 @@
+/* Place your CSS styles in this file */
+body{background-color:azure;}
+
+h1 {
+    text-align: center;
+    font-family: "times new roman", sans-serif;
+    font-weight: bold;
+    color:deepskyblue;
+    font-size: larger;
+}
+
+ul {list-style-type: none;
+background-color: coral;}
+
+p {
+    color:darksalmon;
+    text-align: left;
+    font-size:medium;
+}
+
+li {display: inline;padding: 5cm;}
+
+#p2 {
+    text-align:right;
+    font-size:medium;
+    color:darkcyan;
+}
