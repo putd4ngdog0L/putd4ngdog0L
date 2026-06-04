@@ -16,7 +16,62 @@
          <li>Product</li>
     </Ul>
       <h1>Welcome To Daymoire </h1>
-      <p>Silakan lihat program kami di <a href="https://trinket.io/python/fa572976be0b">sini</a></p>
+     <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daymoire</title>
+</head>
+<body>
+
+    <h1>Welcome to Daymoire</h1>
+
+    <label>Masukkan Judul Note:</label><br>
+    <input type="text" id="judul"><br><br>
+
+    <label>Tuliskan Note Harianmu:</label><br>
+    <textarea id="note"></textarea><br><br>
+
+    <label>Pilih Mood:</label><br>
+    <select id="mood">
+        <option value=":) Bahagia">:) Bahagia</option>
+        <option value=":( Sedih">:( Sedih</option>
+    </select><br><br>
+
+    <label>Pilih Quotes:</label><br>
+    <select id="quotes">
+        <option value="Hari ini tetap berarti.">Hari ini tetap berarti.</option>
+        <option value="Semua perasaan valid.">Semua perasaan valid.</option>
+        <option value="Nikmati setiap proses hidup.">Nikmati setiap proses hidup.</option>
+    </select><br><br>
+
+    <button onclick="simpanNote()">Simpan Note</button>
+
+    <hr>
+
+    <div id="hasil"></div>
+
+    <script>
+        function simpanNote() {
+            let judul = document.getElementById("judul").value;
+            let note = document.getElementById("note").value;
+            let mood = document.getElementById("mood").value;
+            let quotes = document.getElementById("quotes").value;
+
+            document.getElementById("hasil").innerHTML = `
+                <h2>HASIL DAYMOIRE</h2>
+                <p><b>Judul Note:</b> ${judul}</p>
+                <p><b>Isi Note:</b> ${note}</p>
+                <p><b>Mood:</b> ${mood}</p>
+                <p><b>Quotes:</b> ${quotes}</p>
+                <p><b>Note berhasil disimpan :)</b></p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
 
 
 
